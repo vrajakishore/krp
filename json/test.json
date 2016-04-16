@@ -1,5 +1,5 @@
 {"employees":[
-  {"firstName":"John", "lastName":"Doe"},
-  {"firstName":"Anna", "lastName":"Smith"},
-  {"firstName":"Peter", "lastName":"Jones"}
+  {"firstName":"John", "lastName":"Doe", "url":"http://loremflickr.com/320/240/?random=1"},
+  {"firstName":"Anna", "lastName":"Smith", "url":"http://loremflickr.com/320/240/?random=2"},
+  {"firstName":"Peter", "lastName":"Jones", "url":"http://loremflickr.com/320/240/?random=3"}
 ]}
