@@ -1,0 +1,21 @@
+
+
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        <form class="navbar-form navbar-left" role="search">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search" ng-model="search.firstName">
+            </div>
+
+            <table class="table table-striped">
+                <tr ng-repeat="resource in employees | filter:search">
+                    <td>{{resource.firstName}}</td>
+                    <td>{{resource.lastName}}</td>
+
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
