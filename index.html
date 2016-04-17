@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="routerApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,6 +17,12 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+    <link rel="stylesheet" href="css/mystyle.css">
+
+
 </head>
 <body>
 
@@ -24,28 +30,34 @@
     <h1 class="text-center">Hello, world!</h1>
 
     <!-- login form -->
-    <div class="jumbotron">
-        <div class="row"><br><br></div><div class="row"><br></div>
-        <div class="row">
-            <div class="col-lg-4" ></div>
-            <div class="col-lg-4" >
-                <form id="loginForm" class="form-group " role="form">
-                    <div class="form-group">
-                        <input id="mail" type="text" class="form-control" for="inputDefault" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password">
-                    </div>
-                    <div align="center">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-lg-4" ></div>
+
+    <div class="row"><br><br></div><div class="row"><br></div>
+    <div class="row">
+        <div class="col-lg-4" ></div>
+        <div class="col-lg-4 jumbotron" >
+            <form id="loginForm" class="form-group" role="form">
+                <div class="form-group">
+                    <input id="mail" type="text" class="form-control form__input" for="inputDefault" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control form__input" placeholder="Password">
+                </div>
+                <div align="center">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </form>
+
+            <p align="center"><a>Register</a></p>
+
         </div>
+
     </div>
 </div>
 
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -6,7 +6,7 @@ var routerApp = angular.module('routerApp', ['ui.router']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.otherwise('/create');
+    //$urlRouterProvider.otherwise('/create');
 
     $stateProvider
 
@@ -70,16 +70,14 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         })
 
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
-        .state('about', {
-            // we'll get to this in a bit
+        .state('register', {
+            url: '/register',
+            templateUrl: 'register.html'
         });
 
 });
 
-var validationApp = angular
-    .module('validationApp', ['ngMessages'])
-    .controller('MainCtrl', MainCtrl);
+var validationApp = angular.module('validationApp', ['ngMessages']);
 
-function MainCtrl() {
-
-}
+validationApp.controller('MainCtrl', MainCtrl);
+function MainCtrl() {};

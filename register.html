@@ -58,6 +58,7 @@
         <label>Email</label>
         <input type="text" name="uname" class="form-control"
                ng-model="main.uname"
+               placeholder="User Name"
                ng-minlength="5"
                ng-maxlength="20"
                required>
@@ -72,6 +73,7 @@
         <label>Email</label>
         <input type="email" name="email" class="form-control"
                ng-model="main.email"
+               placeholder="Email"
                ng-minlength="5"
                ng-maxlength="20"
                required>
@@ -86,12 +88,12 @@
         <label>Gender</label>
         <div class="radio">
             <label>
-                <input type="radio" name="gender" value="male" /> Male
+                <input type="radio" name="gender" value="male" checked/> Male
             </label>
         </div>
         <div class="radio">
             <label>
-                <input type="radio" name="gender" value="female" /> Female
+                <input type="radio" name="gender" value="female"/> Female
             </label>
         </div>
 
