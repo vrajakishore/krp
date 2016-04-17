@@ -63,9 +63,23 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             controller:"findActor"
         })
 
+        .state('search.searchFilm', {
+            url: '/searchFilm',
+            templateUrl: 'pages/search/searchFilm.html',
+            controller:"findFilm"
+        })
+
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         .state('about', {
             // we'll get to this in a bit
         });
 
 });
+
+var validationApp = angular
+    .module('validationApp', ['ngMessages'])
+    .controller('MainCtrl', MainCtrl);
+
+function MainCtrl() {
+
+}
