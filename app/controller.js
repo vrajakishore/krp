@@ -6,9 +6,9 @@
 routerApp.controller('findActor', function($scope, $http){
     //console.log("controdadsa");
 
-    $http.get('json/test.json').success(function (data){
+    $http.get('json/test2.json').success(function (data){
         $scope.employees = data.employees;
-        //console.log(data);
+        console.log(data.employees);
     });
 });
 
@@ -17,7 +17,7 @@ routerApp.controller('findFilm', function($scope, $http){
 
     $http.get('json/test.json').success(function (data){
         $scope.employees = data.employees;
-        //console.log(data);
+        console.log(data.employees);
     });
 });
 
