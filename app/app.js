@@ -2,7 +2,7 @@
  * Created by vraja on 4/16/2016.
  */
 
-var routerApp = angular.module('routerApp', ['ui.router']);
+var routerApp = angular.module('routerApp', ['ui.router','ngMessages']);
 
 routerApp.config(function($stateProvider, $urlRouterProvider) {
 

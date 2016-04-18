@@ -21,3 +21,5 @@ routerApp.controller('findFilm', function($scope, $http){
     });
 });
 
+routerApp.controller('ErrorCtrl', ErrorCtrl);
+function ErrorCtrl(){};

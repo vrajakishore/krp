@@ -7,13 +7,27 @@
 
             <form id="createActor" class="form-horizontal">
 
-                <div class="form-group">
-                    <label class="col-xs-3 control-label">Full name</label>
-                    <div class="col-xs-4">
-                        <input type="text" class="form-control" name="firstName" placeholder="First name" />
+                <div class="form-group" ng-class="{ 'has-error': createActor.fname.$touched && createActor.fname.$invalid
+     && createActor.lname.$touched && createActor.lname.$invalid}">
+                    <div class="form-group">
+                        <label class="col-xs-3 control-label">Full name</label>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" name="fname" placeholder="First name"
+                                   ng-model="main.fname"
+                                   ng-minlength="5"
+                                   ng-maxlength="10"
+                                   required>
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="text" class="form-control" name="lname" placeholder="Last name"
+                                   ng-model="main.lname"
+                                   ng-minlength="5"
+                                   ng-maxlength="10"
+                                   required>
+                        </div>
                     </div>
-                    <div class="col-xs-4">
-                        <input type="text" class="form-control" name="lastName" placeholder="Last name" />
+                    <div class="help-block" ng-messages="userForm.fname.$error" ng-if="userForm.fname.$touched && userForm.lname.$touched">
+                        <div ng-messages-include="pages/messages.html"></div>
                     </div>
                 </div>
 
