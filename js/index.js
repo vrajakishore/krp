@@ -40,3 +40,11 @@ $(document).ready(function() {
 				$('.modal').toggleClass('modal--open');
 			});	
 });
+
+
+$(function () {
+	$("#datepicker").datepicker({
+		autoclose: true,
+		todayHighlight: true
+	}).datepicker('update', new Date());;
+});
